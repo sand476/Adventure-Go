@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            font-family: 'Arial', sans-serif;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #4CAF50;
+            text-shadow: 0px 2px 4px rgba(0, 128, 0, 0.1);
+        }
+
+        .trip-card {
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .trip-card img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+
+        }
+
+        .trip-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .trip-details {
+            font-family: Georgia,serif;
+            line-height: 1.5;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .book-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-button:hover {
+            background-color: #388E3C;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book Your Dream Trip</h1>
+
+        <div class="trip-card">
+            <img src="C:\Users\bhavy\OneDrive\Desktop\J1\binsar.jpeg" alt="Trip 1">
+            <div class="trip-details">
+                <h2>Binsar,Uttarakhand</h2>
+                <p><b>Best time to visit:</b> October to November<br>
+<b>Places to visit:</b> Zero Point, Pariyadeva Pashan, Mary Budden Estate, Binsar Wildlife Sanctuary, Bineshwar Mahadev Temple, and more.<br>
+<b>Average Temperature:</b> 19.8 degree celsius (Max.) and 6.5-degree celsius (Min.)<br>
+<b>Places to eat: </b>Baba cake and Dolma Restaurant are some of the places you can dine at in Binsar<br></p>
+                <button class="book-button">Book Now</button>
+            </div>
+        </div>
+        
+        <div class="trip-card">
+            <img src="C:\Users\bhavy\OneDrive\Desktop\J1\coorg.jpeg" alt="Trip 2">
+            <div class="trip-details">
+                <h2>Coorg,Karnataka</h2>
+                <p><b>Best time to visit:</b> October to March<br>
+<b>Places to visit:</b> Abbey Falls, Nalknad Palace, Barapole River, Brahmagiri Peak, Iruppu Falls, Namdroling Monastery, Nagarhole National Park, Microlight flight at Chelavara, ziplining, and angling in River Kaveri<br>
+<b>Average Temperature:</b> 29-degree celsius<br>
+<b>Restaurants:</b> Coorg cuisine, Raintree restaurant<br>
+</p>
+                <button class="book-button">Book Now</button>
+            </div>
+        </div>
+
+<div class="trip-card">
+            <img src="C:\Users\bhavy\OneDrive\Desktop\J1\kerala.jpeg" alt="Trip 3">
+            <div class="trip-details">
+                <h2>Kerala</h2>
+                <p><b>Best time to visit:</b> November to January and June to August
+<br>
+<b>Places to visit:</b> Alappuzha Beach, Krishnapuram Palace, Kumarakom bird sanctuary, Marari Beach, Revi Karunakaran Museum, Punnamada Lake, Pathiramanal, and Sri Krishna Temple in Ambalappuzha<br>
+<b>Average Temperature:</b> 28-degree celsius<br>
+<b>Restaurants:</b> The Riceboat, Paragon restaurant<br>
+</p>
+                <button class="book-button">Book Now</button>
+            </div>
+</div>
+
+<div class="trip-card">
+            <img src="C:\Users\bhavy\OneDrive\Desktop\J1\Goa.jpeg" alt="Trip 4">
+            <div class="trip-details">
+                <h2>Goa</h2>
+                <p><b>Best time to visit:</b> November to February<br>
+<b>Places to visit:</b> Beaches like Vagator, Calangute, Anjuna, Colva, & Benaulim, Fort Aguada, Church of Mae De Deus,  Temple of Bodgeshwar, Dudhsagar Waterfalls, St Xavier’s Church, Grand Island (for watersports), Deltin Royale Casino and clubs like Cafe Mambos, Titos, LPK (Love Passion Karma), SinQ, & Club Cubana.<br>
+<b>Events: </b>Sunburn Festival in December<br>
+<b>Famous Markets:</b> Anjuna Flea Market, Panjim Market, Mackie’s Night Bazaar, Saturday Market<br>
+<b>Best Resorts Near Baga Beach:</b> Estrela Do Mar Beach Resort, Resort Rio<br>
+</p>
+                <button class="book-button">Book Now</button>
+            </div>
+        
+        </div>
+
+<div class="trip-card">
+            <img src="C:\Users\bhavy\OneDrive\Desktop\J1\kasol.jpeg" alt="Trip 5">
+            <div class="trip-details">
+                <h2>Kasol,Himachal Pradesh</h2>
+                <p><b>Best time to visit:</b> October to June<br>
+<b>Places to visit:</b> Kheerganga peak, Malana village, Parvati River, Manikaran Sahib Gurudwara, Jari, Bhuntar, and more.<br>
+<b> Temperature:</b> 16.8-degree celsius<br>
+<b>Restaurants:</b> The Evergreen, Moon Dance Cafe<br>
+</p>
+                <button class="book-button">Book Now</button>
+            </div>
+</div>
+
+
+        <!-- You can add more trip cards as needed -->
+    </div>
+</body>
+
+</html>
