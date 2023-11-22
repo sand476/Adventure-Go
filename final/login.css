@@ -32,6 +32,11 @@ body {
     margin: auto;
 
 }
+.Login-form a {
+    color: blue;
+    text-decoration: none; 
+    background-color: white;
+}
 
 h2 {
     margin-bottom: 20px;
