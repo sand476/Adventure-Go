@@ -5,6 +5,17 @@
     <link rel="stylesheet" href="login.css" />
 </head>
 <body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>  
+            </ul>
+        </nav>
+        <a class="cta" href="login.html"><button>Login</button></a>
+    </header>
+    <section class="Home"></section>
     <div class="Login-form">
         <h2>Login Form</h2>
         <form id="Login-form" onsubmit="return showSuccessMessage()">
@@ -14,10 +25,10 @@
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
+            
+            <a href="register">Don't have an account? Sign Up</a><br>
             <button type="submit">Login</button>
         </form>
-
         <div id="success-message" class="hidden">
             <p>Login Successful!</p>
         </div>
@@ -33,7 +44,10 @@
 
             // Show the success message
             document.getElementById("success-message").style.display = "block";
-
+           
+            setTimeout(function() {
+                window.location.replace("booking.html"); // Replace "booking.html" with the URL of your booking page
+                }, 2000);
             return false;
         }
     </script>
