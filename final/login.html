@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourism Login</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <div class="Login-form">
+        <h2>Login Form</h2>
+        <form id="Login-form" onsubmit="return showSuccessMessage()">
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name "email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div id="success-message" class="hidden">
+            <p>Login Successful!</p>
+        </div>
+    </div>
+
+    <script>
+        function showSuccessMessage() {
+            // Prevent the form from being submitted
+            event.preventDefault();
+
+            // Hide the Login form
+            document.getElementById("Login-form").style.display = "none";
+
+            // Show the success message
+            document.getElementById("success-message").style.display = "block";
+
+            return false;
+        }
+    </script>
+</body>
+</html>
